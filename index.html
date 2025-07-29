@@ -22,18 +22,15 @@
   <style>body { display: none; }</style>
   <script>
     const developingCountries = [
-      'AF', 'AM', 'AZ', 'BD', 'BT', 'KH', 'CN', 'GE', 'IN', 'ID', 'IR', 'IQ', 'JO',
-      'KZ', 'KG', 'LA', 'LB', 'MY', 'MV', 'MN', 'MM', 'NP', 'PK', 'PH', 'LK', 'SY',
-      'TJ', 'TH', 'TL', 'TM', 'UZ', 'VN', 'YE', 'DZ', 'AO', 'BJ', 'BW', 'BF', 'BI',
-      'CM', 'CV', 'CF', 'TD', 'KM', 'CD', 'DJ', 'EG', 'GQ', 'ER', 'ET', 'GA', 'GM',
-      'GH', 'GN', 'GW', 'CI', 'KE', 'LS', 'LR', 'LY', 'MG', 'MW', 'ML', 'MR', 'MU',
-      'MA', 'MZ', 'NA', 'NE', 'NG', 'RW', 'ST', 'SN', 'SC', 'SL', 'SO', 'ZA', 'SS',
-      'SD', 'SZ', 'TZ', 'TG', 'TN', 'UG', 'ZM', 'ZW', 'AR', 'BO', 'BR', 'CL', 'CO',
-      'CR', 'CU', 'DO', 'EC', 'SV', 'GT', 'GY', 'HT', 'HN', 'JM', 'MX', 'NI', 'PA',
-      'PY', 'PE', 'PR', 'SR', 'TT', 'UY', 'VE', 'FJ', 'KI', 'MH', 'FM', 'NR', 'PW',
-      'PG', 'WS', 'SB', 'TO', 'TV', 'VU', 'MD', 'UA', 'AL', 'BA', 'MK', 'XK', 'PS',
-      'OM'
-    ];
+  'AF', 'AM', 'AZ', 'BD', 'BT', 'KH', 'CN', 'GE', 'IN', 'ID', 'IR', 'IQ', 'JO',
+  'KZ', 'KG', 'LA', 'LB', 'MY', 'MV', 'MN', 'MM', 'NP', 'PK', 'PH', 'LK', 'SY',
+  'TJ', 'TH', 'TL', 'TM', 'UZ', 'VN', 'YE', 'PS', 'OM',
+  'DZ', 'AO', 'BJ', 'BW', 'BF', 'BI', 'CM', 'CV', 'CF', 'TD', 'KM', 'CD', 'DJ',
+  'EG', 'GQ', 'ER', 'ET', 'GA', 'GM', 'GH', 'GN', 'GW', 'CI', 'KE', 'LS', 'LR',
+  'LY', 'MG', 'MW', 'ML', 'MR', 'MU', 'MA', 'MZ', 'NA', 'NE', 'NG', 'RW', 'ST',
+  'SN', 'SC', 'SL', 'SO', 'ZA', 'SS', 'SD', 'SZ', 'TZ', 'TG', 'TN', 'UG', 'ZM', 'ZW'
+];
+
 
     fetch('https://ipapi.co/json/')
       .then(res => res.json())
